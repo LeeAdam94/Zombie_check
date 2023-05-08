@@ -2,7 +2,7 @@ infected = 100
 high_risk_symptoms = ["bloodshot", "drooling", "crazed"]
 temp = int(input("What is your temperature?: "))
 
-if temp > infected:
+if temp >= infected:
     symptoms = input("Do you have any symptoms?: ")
     symptoms_list = symptoms.split(",")
     if any(symptom in high_risk_symptoms for symptom in symptoms_list):
